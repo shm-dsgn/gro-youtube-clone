@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./Home.css";
 import logo from "../../assets/growTube.png";
+import { ArrowFatLeft, ArrowFatRight } from "@phosphor-icons/react";
 
 function Home() {
   const currentPage = window.sessionStorage.getItem("pageNo")
@@ -55,17 +56,17 @@ function Home() {
         <img src={logo} />
       </div>
       <div className="navigation">
-        <button onClick={prevPage}>&#8592;</button>
+        <button onClick={prevPage}><ArrowFatLeft size={24} color="white" weight="fill" /></button>
         <div>{pageNo + 1} out of 10</div>
-        <button onClick={nextPage}>&#8594;</button>
+        <button onClick={nextPage}><ArrowFatRight size={24} color="white" weight="fill" /></button>
       </div>
       <br />
       {isLoading ? <div>Loading...</div> : <Video data={data} />}
       <br />
       <div className="navigation">
-        <button onClick={prevPage}>&#8592;</button>
+        <button onClick={prevPage}><ArrowFatLeft size={24} color="white" weight="fill" /></button>
         <div>{pageNo + 1} out of 10</div>
-        <button onClick={nextPage}>&#8594;</button>
+        <button onClick={nextPage}><ArrowFatRight size={24} color="white" weight="fill" /></button>
       </div>
     </>
   );

@@ -66,6 +66,7 @@
   justify-content: flex-start;
   margin: 0;
   padding: 0;
+  max-width: 300px;
 }
 
 .submission-title {
@@ -87,16 +88,15 @@
 
 .overlay {
   position: absolute;
-  bottom: 0;
-  padding-left: 64px;
-    padding-right: 64px;
-    
+  bottom: 16;
+  padding-left: 32px;
+  padding-right: 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
   min-width: 320px;
-
+    background-color: rgba(0, 0, 0, 0.259);
   height: 100%;
   z-index: 4;
 }
