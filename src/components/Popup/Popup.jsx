@@ -55,10 +55,12 @@ const Popup = (props) => {
           >
             {props.selectedCard.submission.title}
           </p>
-          {showDescription && (
+          {showDescription ? (
             <p className="submission-description">
               {props.selectedCard.submission.description}
             </p>
+          ) : (
+            null
           )}
         </div>
       </div>
