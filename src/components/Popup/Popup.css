@@ -1,0 +1,117 @@
+.popup {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  margin: 16px;
+  padding: 0;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.creator {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 8px;
+}
+
+.creator-handle {
+  font-size: 12px;
+}
+
+.creator-pic {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 8px;
+  border: solid 2px #646cff;
+}
+
+.creator-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.reaction,
+.comment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.reaction-count,
+.comment-count {
+  font-size: 12px;
+}
+
+.submission {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.submission-title {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.submission-description {
+  font-size: 12px;
+  box-shadow: #646cff;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  padding-left: 64px;
+    padding-right: 64px;
+    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  min-width: 320px;
+  background-color: rgba(26, 26, 26, 0.429);
+  height: 100%;
+  z-index: 4;
+}
+
+.action-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.creatorAndActionbtn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
