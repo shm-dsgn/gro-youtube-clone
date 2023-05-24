@@ -4,7 +4,6 @@ import ReactPlayer from "react-player";
 import { ChatCircle, Heart, XCircle } from "@phosphor-icons/react";
 
 const Popup = (props) => {
-  const [isPlaying, setIsPlaying] = useState(true);
   const [showDescription, setShowDescription] = useState(false);
 
   return (
@@ -36,7 +35,7 @@ const Popup = (props) => {
                 {props.selectedCard.reaction.count}
               </p>
             </div>
-            <br />
+
             {props.selectedCard.comment.commentingAllowed && (
               <div className="comment">
                 <ChatCircle size={28} color="white" />
@@ -48,31 +47,28 @@ const Popup = (props) => {
           </div>
         </div>
 
-        <div className="submission">
-          <p
-            className="submission-title"
-            onClick={() => setShowDescription(!showDescription)}
-          >
+        <div
+          className="submission"
+          onClick={() => setShowDescription(!showDescription)}
+        >
+          <p className="submission-title">
             {props.selectedCard.submission.title}
           </p>
           {showDescription ? (
             <p className="submission-description">
               {props.selectedCard.submission.description}
             </p>
-          ) : (
-            null
-          )}
+          ) : null}
         </div>
       </div>
 
-      <div onClick={() => setIsPlaying(!isPlaying)} className="video">
-        <ReactPlayer
-          url={props.selectedCard.submission.mediaUrl}
-          playing={isPlaying}
-          loop={true}
-          width="100%"
-          height="100%"
-        />
+      <div className="video">
+        <video loop={true} width="370" height="100%" autoPlay>
+          <source
+            src={props.selectedCard.submission.mediaUrl}
+            type="video/mp4"
+          />
+        </video>
       </div>
 
       <XCircle
