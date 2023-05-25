@@ -59,3 +59,9 @@
   background-color: #000000;
   z-index: 10;
 }
+
+@media (max-width: 768px) {
+  .card {
+    width: 300px;
+  }
+}
