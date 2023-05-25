@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./Popup.css";
-import ReactPlayer from "react-player";
 import { ChatCircle, Heart, XCircle } from "@phosphor-icons/react";
 
 const Popup = (props) => {
