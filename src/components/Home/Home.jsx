@@ -4,6 +4,7 @@ import axios from "axios";
 import "./Home.css";
 import logo from "../../assets/growTube.png";
 import { ArrowFatLeft, ArrowFatRight } from "@phosphor-icons/react";
+import Skeleton from "../Skeleton/Skeleton";
 
 function Home() {
   const currentPage = window.sessionStorage.getItem("pageNo")
@@ -61,7 +62,7 @@ function Home() {
         <button onClick={nextPage}><ArrowFatRight size={24} color="white" weight="fill" /></button>
       </div>
       <br />
-      {isLoading ? <div>Loading...</div> : <Video data={data} />}
+      {isLoading ? <Skeleton data={data} /> : <Video data={data} />}
       <br />
       <div className="navigation">
         <button onClick={prevPage}><ArrowFatLeft size={24} color="white" weight="fill" /></button>
