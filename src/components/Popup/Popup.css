@@ -82,7 +82,7 @@
 .overlay {
   display: hidden;
   position: absolute;
-  bottom: 16;
+  padding-bottom: 48px;
   padding-left: 32px;
   padding-right: 32px;
   display: flex;
