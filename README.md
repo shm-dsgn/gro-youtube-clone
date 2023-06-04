@@ -1,6 +1,6 @@
 # gro-youtube-clone
 
-This repository contains the assignment given by [Gro](https://gro.care/) for Web Developer Intern role. 
+This repository contains the assignment/task given by [Gro](https://gro.care/) for Web Developer Intern role. 
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/493855ea-517f-4509-855f-bf64bdd1b512/deploy-status)](https://app.netlify.com/sites/grotube/deploys)
 
